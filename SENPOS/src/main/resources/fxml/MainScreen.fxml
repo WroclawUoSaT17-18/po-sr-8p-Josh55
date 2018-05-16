@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uiController.MainController">
+  <children>
+    <SplitPane dividerPositions="0.2505567928730512, 0.5" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <items>
+        <AnchorPane fx:id="Button_3rs">
+               <children>
+                  <Label layoutX="14.0" layoutY="24.0" text="Address:" />
+                  <TextField fx:id="addressField" layoutX="73.0" layoutY="20.0" prefHeight="25.0" prefWidth="135.0" />
+                  <TextField fx:id="DataField" layoutX="73.0" layoutY="80.0" prefHeight="25.0" prefWidth="135.0" />
+                  <TextField fx:id="NameField" layoutX="73.0" layoutY="110.0" prefHeight="25.0" prefWidth="135.0" />
+                  <Label layoutX="14.0" layoutY="54.0" text="Function:" />
+                  <Label layoutX="14.0" layoutY="84.0" text="Data:" />
+                  <Label layoutX="14.0" layoutY="114.0" text="Name:" />
+                  <Label layoutX="80.0" layoutY="240.0" text="Broadcast" />
+                  <Button fx:id="Button_Start" layoutX="16.0" layoutY="257.0" mnemonicParsing="false" text="START" />
+                  <Button fx:id="Button_Stop" layoutX="146.0" layoutY="257.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="53.0" text="STOP" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="16.0" layoutX="11.0" layoutY="211.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="16.0" layoutX="11.0" layoutY="297.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                  <Button fx:id="Button_1ns" layoutX="60.0" layoutY="330.0" mnemonicParsing="false" text="Next Step" />
+                  <Button fx:id="Button_1rs" layoutX="142.0" layoutY="330.0" mnemonicParsing="false" text="Reset" />
+                  <Label layoutX="19.0" layoutY="337.0" text="1" />
+                  <Button fx:id="Button_2ns" layoutX="60.0" layoutY="380.0" mnemonicParsing="false" text="Next Step" />
+                  <Button fx:id="Button_3ns" layoutX="60.0" layoutY="430.0" mnemonicParsing="false" text="Next Step" />
+                  <Button fx:id="Button_4ns" layoutX="60.0" layoutY="480.0" mnemonicParsing="false" text="Next Step" />
+                  <Button fx:id="Button_5ns" layoutX="60.0" layoutY="530.0" mnemonicParsing="false" text="Next Step" />
+                  <Button fx:id="Button_2rs" layoutX="142.0" layoutY="380.0" mnemonicParsing="false" text="Reset" />
+                  <Button fx:id="Button_3reset" layoutX="142.0" layoutY="430.0" mnemonicParsing="false" text="Reset" />
+                  <Button fx:id="Button_4rs" layoutX="142.0" layoutY="480.0" mnemonicParsing="false" text="Reset" />
+                  <Button fx:id="Button_5rs" layoutX="142.0" layoutY="530.0" mnemonicParsing="false" text="Reset" />
+                  <Label layoutX="19.0" layoutY="384.0" text="2" />
+                  <Label layoutX="19.0" layoutY="434.0" text="3" />
+                  <Label layoutX="19.0" layoutY="484.0" text="4" />
+                  <Label layoutX="19.0" layoutY="534.0" text="5" />
+                  <ChoiceBox fx:id="FunctionField" layoutX="74.0" layoutY="50.0" prefHeight="25.0" prefWidth="135.0" />
+                  <ChoiceBox fx:id="IDField" layoutX="74.0" layoutY="140.0" prefHeight="25.0" prefWidth="135.0" />
+                  <Label layoutX="14.0" layoutY="144.0" text="ID:" />
+                  <Button fx:id="Button_Send" layoutX="42.0" layoutY="176.0" mnemonicParsing="false" text="Send" />
+                  <Button fx:id="Button_Save" layoutX="134.0" layoutY="176.0" mnemonicParsing="false" text="Save" />
+               </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="576.0" prefWidth="246.0">
+               <children>
+                  <Button fx:id="user1" layoutX="31.0" layoutY="50.0" mnemonicParsing="false" text="User 1" />
+                  <Button fx:id="user15" layoutX="128.0" layoutY="50.0" mnemonicParsing="false" text="User 15" />
+                  <Button fx:id="user2" layoutX="31.0" layoutY="85.0" mnemonicParsing="false" text="User 2" />
+                  <Button fx:id="user3" layoutX="31.0" layoutY="120.0" mnemonicParsing="false" text="User 3" />
+                  <Button fx:id="user4" layoutX="31.0" layoutY="155.0" mnemonicParsing="false" text="User 4" />
+                  <Button fx:id="user5" layoutX="31.0" layoutY="190.0" mnemonicParsing="false" text="User 5" />
+                  <Button fx:id="user6" layoutX="31.0" layoutY="225.0" mnemonicParsing="false" text="User 6" />
+                  <Button fx:id="user7" layoutX="31.0" layoutY="260.0" mnemonicParsing="false" text="User 7" />
+                  <Button fx:id="user8" layoutX="31.0" layoutY="295.0" mnemonicParsing="false" text="User 8" />
+                  <Button fx:id="user9" layoutX="31.0" layoutY="330.0" mnemonicParsing="false" text="User 9" />
+                  <Button fx:id="user10" layoutX="31.0" layoutY="365.0" mnemonicParsing="false" text="User 10" />
+                  <Button fx:id="user11" layoutX="31.0" layoutY="400.0" mnemonicParsing="false" text="User 11" />
+                  <Button fx:id="user12" layoutX="31.0" layoutY="435.0" mnemonicParsing="false" text="User 12" />
+                  <Button fx:id="user13" layoutX="31.0" layoutY="470.0" mnemonicParsing="false" text="User 13" />
+                  <Button fx:id="user14" layoutX="31.0" layoutY="505.0" mnemonicParsing="false" text="User 14" />
+                  <Button fx:id="user16" layoutX="128.0" layoutY="85.0" mnemonicParsing="false" text="User 16" />
+                  <Button fx:id="user17" layoutX="128.0" layoutY="120.0" mnemonicParsing="false" text="User 17" />
+                  <Button fx:id="user18" layoutX="128.0" layoutY="155.0" mnemonicParsing="false" text="User 18" />
+                  <Button fx:id="user19" layoutX="128.0" layoutY="190.0" mnemonicParsing="false" text="User 19" />
+                  <Button fx:id="user20" layoutX="128.0" layoutY="225.0" mnemonicParsing="false" text="User 20" />
+                  <Button fx:id="user21" layoutX="128.0" layoutY="260.0" mnemonicParsing="false" text="User 21" />
+                  <Button fx:id="user22" layoutX="128.0" layoutY="295.0" mnemonicParsing="false" text="User 22" />
+                  <Button fx:id="user23" layoutX="128.0" layoutY="330.0" mnemonicParsing="false" text="User 23" />
+                  <Button fx:id="user24" layoutX="128.0" layoutY="365.0" mnemonicParsing="false" text="User 24" />
+                  <Button fx:id="user25" layoutX="128.0" layoutY="400.0" mnemonicParsing="false" text="User 25" />
+                  <Button fx:id="user26" layoutX="128.0" layoutY="435.0" mnemonicParsing="false" text="User 26" />
+                  <Button fx:id="user27" layoutX="128.0" layoutY="470.0" mnemonicParsing="false" text="User 27" />
+                  <Button fx:id="user28" layoutX="128.0" layoutY="505.0" mnemonicParsing="false" text="User 28" />
+               </children>
+        </AnchorPane>
+        <ScrollPane prefHeight="-1.0" prefWidth="-1.0">
+          <content>
+            <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="575.0" prefWidth="444.0">
+                     <children>
+                        <Button fx:id="Button_Con" layoutX="122.0" layoutY="529.0" mnemonicParsing="false" text="Connect" />
+                        <Button fx:id="Button_Scan" layoutX="51.0" layoutY="529.0" mnemonicParsing="false" text="Scan" />
+                        <ComboBox fx:id="Combo_COM" layoutX="222.0" layoutY="529.0" prefWidth="150.0" promptText="Select COM port" />
+                        <ListView fx:id="ListView_Console" layoutX="22.0" layoutY="14.0" prefHeight="498.0" prefWidth="399.0" />
+                     </children>
+            </AnchorPane>
+          </content>
+        </ScrollPane>
+      </items>
+    </SplitPane>
+    <HBox id="HBox" fx:id="label_rightStatus" alignment="CENTER_LEFT" spacing="5.0" VBox.vgrow="NEVER">
+      <children>
+        <Label fx:id="Status_Left" maxHeight="1.7976931348623157E308" maxWidth="-1.0" text="Left status" HBox.hgrow="ALWAYS">
+          <font>
+            <Font size="11.0" fx:id="x3" />
+          </font>
+          <textFill>
+            <Color blue="0.625" green="0.625" red="0.625" fx:id="x4" />
+          </textFill>
+        </Label>
+        <Pane prefHeight="-1.0" prefWidth="-1.0" HBox.hgrow="ALWAYS" />
+        <Label fx:id="Status_Right" font="$x3" maxWidth="-1.0" text="Right status" textFill="$x4" HBox.hgrow="NEVER" />
+      </children>
+      <padding>
+        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+      </padding>
+    </HBox>
+  </children>
+</VBox>
