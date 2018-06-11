@@ -29,6 +29,9 @@ public class CommunicationManager implements SerialPortEventListener{
 	private ExecutorService executorService = null;
 	private LinkedBlockingQueue<String> buffRX = null;
 	
+	private int bufLen = 0;
+	private String sCrcRaw;
+	
 	// CONSTRUCTOR
 	public CommunicationManager()
 	{
@@ -56,7 +59,17 @@ public class CommunicationManager implements SerialPortEventListener{
 								String command = buf.substring(0, buf.indexOf("\r\n") + 1);
 								command = command.replaceAll("\r", "");
 								command = command.replaceAll("\n", "");
+								
+								//CRC check engine
+								bufLen = buf.length();
+								sCrcRaw = buf.substring((bufLen - 3), bufLen);
+								if (Crc16.crcComparator(sCrcRaw) == 0)
+								{
+									AppComponents.getMainController().appendConsoleSys("Wrong CRC");
+								}
+								
 								buf = buf.substring(buf.indexOf("\r\n") + 1);
+
 								//TODO bug fix
 								AppComponents.getMainController().appendConsoleRx(command);
 								//TODO  notify list view

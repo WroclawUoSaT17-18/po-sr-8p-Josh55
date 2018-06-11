@@ -399,12 +399,14 @@ public class MainController {
 	 * Console appender
 	 * @param sData
 	 */
-	public void appendConsoleSys(String sData) 
+	public String appendConsoleSys(String sData) 
 	{		
-		ListView_Console.getItems().add("Sys:\t" + sData);
+		ListView_Console.getItems().add("Sys:" + sData);
 				
 		int size = ListView_Console.getItems().size();
 		ListView_Console.scrollTo(size - 1);
+		
+		return "Sys" + sData;
 	}
 	
 	public void appendConsoleTx(String sData) 
@@ -429,6 +431,12 @@ public class MainController {
 			}
 		});
 	}
+	
+	public static String testTest(String sDate)
+	{
+		return "Sys" + sDate;
+	}
+	
 	
 	//////////////////////////////////////////////////////////////////////////////////
 	
